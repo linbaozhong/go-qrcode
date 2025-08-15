@@ -1,3 +1,3 @@
-module github.com/skip2/go-qrcode
+module github.com/linbaozhong/go-qrcode
 
-go 1.13
+go 1.24.4
