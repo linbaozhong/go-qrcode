@@ -590,7 +590,7 @@ func (q *QRCode) ToSmallString(inverseColor bool) string {
 				}
 			}
 		}
-		buf.WriteString("\n")
+		buf.WriteString("\r\n")
 	}
 	// special treatment for the last row if odd
 	if len(bits)%2 == 1 {
@@ -602,7 +602,7 @@ func (q *QRCode) ToSmallString(inverseColor bool) string {
 				buf.WriteString("▀")
 			}
 		}
-		buf.WriteString("\n")
+		buf.WriteString("\r\n")
 	}
 	return buf.String()
 }
